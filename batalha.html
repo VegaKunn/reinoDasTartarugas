@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <div id="tela">
+      <div class="visualBatalha">
+        <div id="iniStatus">
+          <div class="barraDeStatusLuta">
+            <p id="nomeInimigoId"></p>
+            <div class="barraTotal">
+              <div class="barraVidaInimigo"></div>
+            </div>
+            <div class="barraTotal">
+              <div class="barraPoderInimigo"></div>
+            </div>
+            <div class="barraTotal">
+              <div class="barraEnergiaInimigo"></div>
+            </div>
+          </div>
+        </div>
+        <div id="iniImg">inimigo</div>
+        <div id="euImg">eu</div>
+        <div id="euStatus">
+          <div class="barraDeStatusLuta">
+            <p id="nomeId"></p>
+            <div class="barraTotal">
+              <div class="barraVida"></div>
+            </div>
+            <div class="barraTotal">
+              <div class="barraPoder"></div>
+            </div>
+            <div class="barraTotal">
+              <div class="barraEnergia"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menuComandos">
+        <div class="menuComandosFilhos">
+          <p id="atacar"></p>
+        </div>
+        <div class="menuComandosFilhos">
+          <p id="magia"></p>
+          <div><p id="energia"></p></div>
+          <div><p id="poder"></p></div>
+          <div><p id="a"></p></div>
+        </div>
+        <div class="menuComandosFilhos"><p id="itens"></p></div>
+        <div class="menuComandosFilhos"><p id="fugir"></p></div>
+      </div>
+    </div>
+    <button onclick="{eu.combate(ele)}">Atack</button>
+  </body>
+</html>
