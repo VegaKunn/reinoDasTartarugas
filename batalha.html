@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <script defer src="index.js"></script>
-    <link rel="stylesheet" href="estilo.css" />
+    <script defer src="/estrutura/index.js"></script>
+    <link rel="stylesheet" href="./estrutura/estilo.css" />
   </head>
   <body>
     <div id="tela">
@@ -26,7 +26,9 @@
             </div>
           </div>
         </div>
-        <div id="iniImg">inimigo</div>
+        <div id="iniImg" class="semTurno">
+          <div>inimigo</div>
+        </div>
         <div id="euImg">eu</div>
         <div id="euStatus">
           <div class="barraDeStatusLuta">
@@ -43,6 +45,11 @@
           </div>
         </div>
       </div>
+
+      <!--  MENU DE COMBATE   -->
+      <div class="espera">
+        <h2>Turno Inimigo</h2>
+      </div>
       <div class="menuComandos">
         <div class="menuComandosFilhos">
           <p id="atacar"></p>
@@ -58,5 +65,6 @@
       </div>
     </div>
     <button onclick="{eu.combate(ele)}">Atack</button>
+    <button onclick="{m()}">Atack</button>
   </body>
 </html>

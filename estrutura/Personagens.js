@@ -68,7 +68,7 @@ function PersonagemPrincipal(ctx, teclado) {
           if (movimentoAnimado > 3) {
             movimentoAnimado = 0;
           }
-        }, 400);
+        }, 200);
       } else {
         clearInterval(temporizador);
       }

@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script type="module" defer src="canvas.js"></script>
+
+    <script defer src="/estrutura/index.js"></script>
+    <link rel="stylesheet" href="./estrutura/estilo.css" />
+    <script type="module" defer src="./canvas.js"></script>
 
     <style>
       * {
@@ -16,7 +19,7 @@
       #canvasBody {
         border: 7px solid black;
       }
-      .divCorpo {
+      .divCorpoCanvas {
         width: 100%;
         min-height: 100vh;
         display: flex;
@@ -26,9 +29,65 @@
     </style>
   </head>
   <body>
-    <div class="divCorpo">
+    <div class="divCorpoCanvas">
       <canvas id="canvasBody" width="1600" height="900"> </canvas>
+
+      <div id="tela">
+        <div class="visualBatalha">
+          <div id="iniStatus">
+            <div class="barraDeStatusLuta">
+              <p id="nomeInimigoId"></p>
+              <div class="barraTotal">
+                <div class="barraVidaInimigo"></div>
+              </div>
+              <div class="barraTotal">
+                <div class="barraPoderInimigo"></div>
+              </div>
+              <div class="barraTotal">
+                <div class="barraEnergiaInimigo"></div>
+              </div>
+            </div>
+          </div>
+          <div id="iniImg" class="semTurno">
+            <div>inimigo</div>
+          </div>
+          <div id="euImg">eu</div>
+          <div id="euStatus">
+            <div class="barraDeStatusLuta">
+              <p id="nomeId"></p>
+              <div class="barraTotal">
+                <div class="barraVida"></div>
+              </div>
+              <div class="barraTotal">
+                <div class="barraPoder"></div>
+              </div>
+              <div class="barraTotal">
+                <div class="barraEnergia"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  MENU DE COMBATE   -->
+        <div class="espera">
+          <h2>Turno Inimigo</h2>
+        </div>
+        <div class="menuComandos">
+          <div class="menuComandosFilhos">
+            <p id="atacar"></p>
+          </div>
+          <div class="menuComandosFilhos">
+            <p id="magia"></p>
+            <div><p id="energia"></p></div>
+            <div><p id="poder"></p></div>
+            <div><p id="a"></p></div>
+          </div>
+          <div class="menuComandosFilhos"><p id="itens"></p></div>
+          <div class="menuComandosFilhos"><p id="fugir"></p></div>
+        </div>
+      </div>
     </div>
-    sdfsdfasdfasdf
+
+    <button onclick="{iniciarBatalha()}">batalha</button>
   </body>
 </html>
