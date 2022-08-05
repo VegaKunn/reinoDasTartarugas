@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <script defer src="/estrutura/index.js"></script>
+    <script type="module" defer src="/estrutura/index.js"></script>
     <link rel="stylesheet" href="./estrutura/estilo.css" />
     <script type="module" defer src="./canvas.js"></script>
 
@@ -88,6 +88,13 @@
       </div>
     </div>
 
-    <button onclick="{iniciarBatalha()}">batalha</button>
+    <button onClick="a()">batalha</button>
+
+    <script type="module" defer>
+      import iniciarBatalha from "./estrutura/iniciarBatalha.js";
+      function a() {
+        iniciarBatalha();
+      }
+    </script>
   </body>
 </html>

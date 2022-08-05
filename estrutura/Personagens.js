@@ -1,5 +1,7 @@
 console.log("funfou");
-
+function a() {
+  console.log("sadfsdfsdfafasfasf");
+}
 function PersonagemPrincipal(ctx, teclado) {
   // movimentação e fora de combate
   let personagem = new Image();
